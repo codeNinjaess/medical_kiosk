@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #e3e5ae;
+    margin: 0;
+    padding-top: 60px; /* Add padding to the top to prevent the header from overlapping content */
+}
+
+h1 {
+    color: #ff6600;
+    animation: bounce 1s infinite;
+}
+
+.menu a {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    background: #ffcc00;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.menu a:hover {
+    background: #ff9900;
+}
+
+.tree {
+    position: relative; /* Allows absolute positioning inside */
+    width: 400px; /* Adjust to match your image */
+    height: 500px; /* Adjust to match your image */
+    background-image: url('tree.png'); /* Your tree image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+}
+
+.word {
+    padding: 15px;
+    margin: 5px;
+    background-color: lightblue;
+    border: none;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.word:hover {
+    background-color: deepskyblue;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.word {
+    background-image: url('apple.png'); /* Use an apple-shaped image */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100px;  /* Adjust based on apple size */
+    height: 100px;
+    border: none;
+    background-color: transparent; /* Removes button color */
+    box-shadow: none; /* Removes button shadow */
+    outline: none; /* Removes focus outline */
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    line-height: 100px; /* Centers text inside */
+}
+
+.word-selection-game{
+    background-image: url('tree2.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures it covers the whole screen */
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.white{
+    color: rgb(47, 50, 53);
+}
+
+/* Navigation bar styles for header and footer */
+.navbar {
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: #ff6600;
+}
+
+.navbar a.prev-btn {
+    background-color: #ff9900;
+}
+
+.navbar a.prev-btn:hover {
+    background-color: #cc7a00;
+}
+
+/* Footer position and styles */
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background-color: #333;
+    padding: 10px;
+    text-align: center;
+}
+
+reading-text{
+    size: 100px !important;
+}
